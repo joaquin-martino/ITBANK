@@ -1,0 +1,26 @@
+{% extends 'home/base.html' %}
+
+{% load static %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<section class="probootstrap-cover probootstrap-scene-0">
+    <div class="container">
+      <div class="row probootstrap-vh-100 align-items-center  text-md-left text-sm-center text-center">
+        <div class="col-md-6 order-md-2 order-1">
+          <img src="{% static 'home\img\itbank1.png' %}" class="img-fluid probootstrap-device-vertical-1" alt="Free Bootstrap 4 Template by uicookies.com">
+        </div>
+        <div class="col-md-6 order-md-1 order-2">
+          <div class="probootstrap-text">
+            <h1 class="probootstrap-heading probootstrap-stagger text-white mb-2">¡Hola! <br> Bienvenido a <b>ITBANK Online</b></h1>
+            <p class="mb-5 probootstrap-stagger lead">Ingresá el banco mas facil y simple de usar. <br> Donde tu dinero vale mas.</p>
+            <p class="probootstrap-stagger"><a href="registro.html" class="btn btn-primary mr-2 mb-2"><span class="icon-ipad"></span>Registrate!</a>
+                <a href="" class="btn btn-primary btn-outline-black mb-2">Inicia Sesion</a></p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+{% endblock %}
