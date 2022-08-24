@@ -1,0 +1,37 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+
+
+<section class="probootstrap-section probootstrap-scene-1 probootstrap-bg-dark">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md text-center mb-5">
+          <span class="icon-location display-4 d-block mb-5 text-primary"></span>
+          <form action="" method="post"> {% csrf_token %}
+            <h1 style="text-align: center;">Complete la solicitud para adquirir el prestamo:</h1><br>
+             
+            <label for="tipop">Tipo de prestamo:</label>
+            <select name="tipop" id="tipop">
+                <option value="volvo">Personal</option>
+                <option value="saab">Hipotecario</option>
+                <option value="mercedes">Prendario</option>
+                <option value="audi">Otro</option>
+            </select><br>
+            
+            <label for="fecha">Fecha de inicio:</label>
+            <input type="date" name="fecha"><br>
+
+            <label for="monto">Monto(AR$):</label>
+            <input type="number" name="monto"><br>
+    
+            <input type="submit" value="Solicitar" style="text-align: center">
+    
+    
+            </form>
+        </div>
+      </div>
+    </div>
+</section>
+
+{% endblock %}

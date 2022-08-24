@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from home import views as views_home
 from django.urls import include
+from prestamos import views
 
 urlpatterns = [
     path('',views_home.home, name="home"),
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('prestamos/', views.pedido_prestamos),
 ]
