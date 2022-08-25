@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'prestamos',  #aca es donde registramos cada app que hayamos creada para que la tome django cuando realizamos migraciones
 ]
 
 MIDDLEWARE = [
